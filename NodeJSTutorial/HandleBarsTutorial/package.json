@@ -1,0 +1,15 @@
+{
+  "name": "handle_bars_tutorial",
+  "version": "0.0.1",
+  "description": "Tutorial about different templates that are used by partials",
+  "main": "app.js",
+  "scripts": {
+    "test": "node app.js"
+  },
+  "author": "@joshishaswat",
+  "license": "GPL-3.0-or-later",
+  "dependencies": {
+    "express": "^4.19.2",
+    "hbs": "^4.2.0"
+  }
+}

@@ -1,0 +1,14 @@
+{
+  "name": "npm_tutorial",
+  "version": "0.0.1",
+  "description": "just saying hi",
+  "main": "index.js",
+  "scripts": {
+    "test": "node index.js"
+  },
+  "author": "@joshishaswat",
+  "license": "GPL-3.0-or-later",
+  "dependencies": {
+    "minimist": "^1.2.8"
+  }
+}
