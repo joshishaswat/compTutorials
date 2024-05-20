@@ -1,0 +1,15 @@
+{
+  "name": "curl_tutorial",
+  "version": "0.0.1",
+  "description": "testing out POST request",
+  "main": "server.js",
+  "scripts": {
+    "test": "node server.js"
+  },
+  "author": "@joshishaswat",
+  "license": "GPL-3.0-or-later",
+  "dependencies": {
+    "body-parser": "^1.20.2",
+    "express": "^4.19.2"
+  }
+}
