@@ -1,0 +1,16 @@
+{
+  "name": "curl.js",
+  "version": "0.0.0",
+  "description": "This package reproduces some of the functionality of cURL using Node.js fethc",
+  "type": "module",
+  "main": "weather.js",
+  "scripts": {
+    "test": "node weather.js"
+  },
+  "author": "@joshishaswat",
+  "license": "GPL-3.0-or-later",
+  "dependencies": {
+    "minimist": "^1.2.8",
+    "node-fetch": "^3.3.2"
+  }
+}
