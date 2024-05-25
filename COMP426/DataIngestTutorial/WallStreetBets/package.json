@@ -1,0 +1,16 @@
+{
+  "name": "wallstreet_bets",
+  "version": "0.0.1",
+  "description": "Testing curl requests with parameters",
+  "main": "index.js",
+  "type": "module",
+  "scripts": {
+    "test": "node index.js"
+  },
+  "author": "@joshishaswat",
+  "license": "GPL-3.0-or-later",
+  "dependencies": {
+    "minimist": "^1.2.8",
+    "node-fetch": "^3.3.2"
+  }
+}
