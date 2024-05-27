@@ -1,0 +1,16 @@
+{
+  "name": "curl.js",
+  "version": "0.0.0",
+  "description": "This package reproduces some of the functionality of cURL using Node.js fetch.",
+  "main": "cli.js",
+  "type":"module",
+  "scripts": {
+    "test": "node cli.js -X 1 -H 2 3 -d -o 5"
+  },
+  "author": "@joshishaswat",
+  "license": "GPL-3.0-or-later",
+  "dependencies": {
+    "minimist": "^1.2.8",
+    "node-fetch": "^3.3.2"
+  }
+}
