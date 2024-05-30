@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<html>
+<head>
+<script>
+playRoshambo = function(clientGesture) {
+	if(clientGesture == "rock") {
+		result = "tie";
+	}
+	if(clientGesture == "paper") {
+		result = "win";
+	}
+	if(clientGesture == "scissors") {
+		result = "lose";
+	}
+	alert("You "+result+"!");
+};
+</script>
+</head>
+
+<body>
+	<p>Which one will it be?</p>
+	<a href='#' onclick='playRoshambo("rock")'>rock</a>
+	<a href='#' onclick='playRoshambo("paper")'>paper</a>
+	<a href='#' onclick='playRoshambo("scissors")'>scissors</a>
+</body>
+</html>
