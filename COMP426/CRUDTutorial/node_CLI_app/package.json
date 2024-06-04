@@ -1,0 +1,16 @@
+{
+  "name": "node_cli_app",
+  "version": "0.0.1",
+  "description": "An app that will create, read, update and delete entries to database",
+  "main": "index.js",
+  "type": "module",
+  "scripts": {
+    "test": "node index.js"
+  },
+  "author": "joshishaswat",
+  "license": "GPL-3.0-or-later",
+  "dependencies": {
+    "inquirer": "^9.2.23",
+    "uuid": "^9.0.1"
+  }
+}
