@@ -1,0 +1,16 @@
+{
+  "name": "crud-operation-with-jsonfile",
+  "version": "0.0.1",
+  "description": "A CRUD app that is built using Express",
+  "main": "app.js",
+  "scripts": {
+    "start": "nodemon app.js"
+  },
+  "author": "joshishaswat",
+  "license": "GPL-3.0-or-later",
+  "dependencies": {
+    "body-parser": "^1.20.2",
+    "express": "^4.19.2",
+    "nodemon": "^3.1.3"
+  }
+}
