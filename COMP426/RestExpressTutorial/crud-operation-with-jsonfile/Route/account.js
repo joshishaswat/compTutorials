@@ -34,6 +34,12 @@ accountRoutes.get("/account/list", (req, res) => {
 	res.send(accounts)
 })
 
+// Read - get one account
+accountRoutes.get("/account/listone", (req, res) => {
+	const accounts = getAccountData()
+	res.send(accounts[req.body["id"]])
+})
+
 // Update - using put method
 accountRoutes.put("/account/:id", (req, res) => { 
 	var existAccounts = getAccountData()
