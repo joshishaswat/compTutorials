@@ -10,40 +10,20 @@ exports.signup = (req, res) => {
     password: bcrypt.hashSync(req.body.password, 8)
   });
 
-  user.save((err, user) => {
-    if (err) {
-      res.status(500)
-        .send({
-          message: err
-        });
-      return;
-    } else {
-      res.status(200)
-        .send({
-          message: "User Registered successfully"
-        })
-    }
-  });
-};
+
+  user.save().then(user => {
+	res.status(500)
+	.send({
+		message: "User registered successfully"
+	})
+  })
+} 
 
 exports.signin = (req, res) => {
   User.findOne({
       email: req.body.email
     })
-    .exec((err, user) => {
-      if (err) {
-        res.status(500)
-          .send({
-            message: err
-          });
-        return;
-      }
-      if (!user) {
-        return res.status(404)
-          .send({
-            message: "User Not found."
-          });
-      }
+    .exec().then(user  => {
 
       //comparing passwords
       var passwordIsValid = bcrypt.compareSync(

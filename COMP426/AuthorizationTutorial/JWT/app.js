@@ -3,6 +3,9 @@ app = express(),
 mongoose = require("mongoose"),
 userRoutes = require("./routes/user")
 
+require("dotenv")
+	.config()
+
 // Connect to database
 try {
 	mongoose.connect("mongodb+srv://joshishaswat:Samosabucket@cluster0.kgylxvu.mongodb.net/?retryWrites=true&w=majority&appName=Cluster0", {
