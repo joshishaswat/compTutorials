@@ -1,23 +1,23 @@
-<!DOCTYPE html>
+<html>
+	<head>
+		<title>Document Object Model</title>
+	</head>
+	<body>
+		<p id="question">What is the DOM?</p>
 
-<body> 
-<p>This is a paragraph</p>
-
-<table>
-  <tr>
-    <th>Name</th>
-    <th>Description</th>
-  </tr>
-  <tr>
-    <td>A</td>
-    <td>Description of A</td>
-  </tr>
-  <tr>
-    <td>B</td>
-    <td>Description of B</td>
-  </tr>
-</table>
-
-</body>
-
-
+		<p>Which method are we using now?</p>
+		<p>
+			<label for="GEBID">
+				<input type="radio" name="gebid" value="Get Element By ID" id="GEBID"> Get Element By ID
+			</label>
+			<label for="GEBN">
+				<input type="radio" name="gebn" value="Get Element By ID" id="GEBID"> Get Element By ID
+			</label>
+		</p>
+		<script>
+			const p = document.getElementById('question')
+			console.log('Paragraph ID question: ')
+			console.log(p)
+		</script>
+	</body>
+</html>
