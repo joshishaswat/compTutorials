@@ -5,19 +5,46 @@
 	<body>
 		<p id="question">What is the DOM?</p>
 
-		<p>Which method are we using now?</p>
-		<p>
+		<p class="question">Which method are we using now?</p>
+		<p class="responses">
 			<label for="GEBID">
-				<input type="radio" name="gebid" value="Get Element By ID" id="GEBID"> Get Element By ID
-			</label>
+				<input type="radio" name="getelem" value="Get Element By ID" id="GEBID"> Get Element By ID
+			</label><br/>
 			<label for="GEBN">
-				<input type="radio" name="gebn" value="Get Element By ID" id="GEBID"> Get Element By ID
+				<input type="radio" name="getelem" value="Get Element By Name" id="GEBN"> Get Element By Name
 			</label>
 		</p>
 		<script>
 			const p = document.getElementById('question')
 			console.log('Paragraph ID question: ')
 			console.log(p)
+			const name = document.getElementsByName('getelem')
+			console.log('Input elements named getelem: ')
+			console.log(name)
+			const ps = document.getElementsByTagName('p')
+			console.log('All elements with P tags')
+			console.log(ps)
+			const qs = document.getElementsByClassName('question')
+			const rs = document.getElementsByClassName('responses')
+			console.log('All elements with questions class assigned')
+			console.log(qs)
+			console.log('All elements with questions class assigned')
+			console.log(rs)
+			let element = document.querySelector('*')
+			let elements = document.querySelectorAll('*')
+			console.log('First element')
+			console.log(element)
+			console.log('All elements')
+			console.log(elements)	
+			let inputs = document.querySelectorAll('p > label > input')
+			console.log('Inputs inside labels inside paragraphs')
+			console.log(inputs)
+			const inputSibs = document.querySelectorAll('p ~ input')
+			console.log('All inputs under paragraphs')
+			console.log(inputSibs)
+			const parent = document.parentNode
+			console.log('The parent node:')
+			console.log(parent)
 		</script>
 	</body>
 </html>
